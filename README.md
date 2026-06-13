@@ -38,6 +38,7 @@ Todos os itens a seguir devem ser realizados em todos os projetos ao menos que e
 - no ECR, configuração da imutabilidade, lifecycle configuration (expire), resource policies, e endpoint (vpc endpoint)
 - No ALB, sempre ligar o log;
 - no RDS, sempre ativar a proteção de delação, parameter group proprio, snapshots
+- GuardDuty e WAF relacionados a: "Ensure compliance with relevant regulations and maintain records of suspicious activities."
 - Cloud-based = provavel serviço gerenciado (cloud-base batch processing system = AWS Batch)
 - Se usar ECS fazer a config com Fargate
 - Analisar as roles pre existentes na doc, e avaliar serviços potencialmente relacionaveis
