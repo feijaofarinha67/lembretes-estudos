@@ -39,3 +39,4 @@ Todos os itens a seguir devem ser realizados em todos os projetos ao menos que e
 - No ALB, sempre ligar o log;
 - no RDS, sempre ativar a proteção de delação, parameter group proprio, snapshots
 - Cloud-based = provavel serviço gerenciado (cloud-base batch processing system = AWS Batch)
+- Se usar ECS fazer a config com Fargate
