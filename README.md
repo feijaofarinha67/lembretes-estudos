@@ -43,3 +43,4 @@ Todos os itens a seguir devem ser realizados em todos os projetos ao menos que e
 - Analisar as roles pre existentes na doc, e avaliar serviços potencialmente relacionaveis
 - caso haja "Point deductions" explicitamente na doc, tomar cuidado com os serviços
 - DynamoDB: deletion protection, ttl, encryption, endpoint (vpc endpoint), tag e backup
+- Security Groups: remover regras 0.0.0.0/0 e SSH.
