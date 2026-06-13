@@ -37,7 +37,7 @@ Todos os itens a seguir devem ser realizados em todos os projetos ao menos que e
 - Criar um vpc nova para cada projeto e ativar o vpc flow logs;
 - no ECR, configuração da imutabilidade, lifecycle configuration (expire), resource policies, e endpoint (vpc endpoint)
 - No ALB, sempre ligar o log;
-- no RDS, sempre ativar a proteção de delação, parameter group proprio, snapshots
+- no RDS, sempre ativar a proteção de delação, parameter group proprio, snapshots e config logs
 - GuardDuty e WAF relacionados a: "Ensure compliance with relevant regulations and maintain records of suspicious activities."
 - Cloud-based = provavel serviço gerenciado (cloud-base batch processing system = AWS Batch)
 - Se usar ECS fazer a config com Fargate
@@ -45,3 +45,4 @@ Todos os itens a seguir devem ser realizados em todos os projetos ao menos que e
 - caso haja "Point deductions" explicitamente na doc, tomar cuidado com os serviços
 - DynamoDB: deletion protection, ttl, encryption, endpoint (vpc endpoint), tag e backup
 - Security Groups: remover regras 0.0.0.0/0 e SSH.
+- Kinesis: data streams com criptografia
