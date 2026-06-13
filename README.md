@@ -35,6 +35,7 @@ Todos os itens a seguir devem ser realizados em todos os projetos ao menos que e
 - Sempre que houver menção a proteção de apis contra ataques, deve-se utilizar o WAF;
 - Sempre que tiver que utilizar um S3 no projeto, ele deve ter a seguinte características: configuração de ciclo de vida (definir movimentação de tiers), ativar o versionamento e o encryption, endpoint (vpc endpoint).
 - Criar um vpc nova para cada projeto e ativar o vpc flow logs;
-- no ECR, configuração da imutabilidade, lifecycle configuration, resource policies, e endpoint
+- no ECR, configuração da imutabilidade, lifecycle configuration (expire), resource policies, e endpoint
 - No ALB, sempre ligar o log;
 - no RDS, sempre ativar a proteção de delação, parameter group proprio, snapshots
+- Cloud-based = provavel serviço gerenciado (cloud-base batch processing system = AWS Batch)
