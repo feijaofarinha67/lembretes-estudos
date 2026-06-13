@@ -42,4 +42,4 @@ Todos os itens a seguir devem ser realizados em todos os projetos ao menos que e
 - Se usar ECS fazer a config com Fargate
 - Analisar as roles pre existentes na doc, e avaliar serviços potencialmente relacionaveis
 - caso haja "Point deductions" explicitamente na doc, tomar cuidado com os serviços
-- DynamoDB: deletion protection, ttl  backup
+- DynamoDB: deletion protection, ttl, encryption, tag e backup
