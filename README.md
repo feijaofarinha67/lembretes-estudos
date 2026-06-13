@@ -37,4 +37,4 @@ Todos os itens a seguir devem ser realizados em todos os projetos ao menos que e
 - Criar um vpc nova para cada projeto e ativar o vpc flow logs;
 - no ECR, configuração da imutabilidade, lifecycle configuration, resource policies, e endpoint
 - No ALB, sempre ligar o log;
-- no RDS, sempre ativar a proteção de delação.
+- no RDS, sempre ativar a proteção de delação, parameter group proprio, snapshots
