@@ -29,8 +29,8 @@ grande parte dos pontos eram realmente relacionadas a resposta da aplicação em
 
 ## Itens
 
-- Todos os itens a seguir devem ser realizados em todos os projetos ao menos que esteja explicitado a sua não execução.
-todos os recursos criados vão ter tags de verificação mesmo que nao esteja especificado na documentação Ex: "project":"gameday"; "owner":"brazil team";
+Todos os itens a seguir devem ser realizados em todos os projetos ao menos que esteja explicitado a sua não execução:
+- Todos os recursos criados vão ter tags de verificação mesmo que nao esteja especificado na documentação Ex: "project":"gameday"; "owner":"brazil team";
 - Sempre que houver aplicações web/apis no contexto do jogo e se falar as palavras "cache", deve-se utilizar Cloudfront;
 - Sempre que houver menção a proteção de apis contra ataques, deve-se utilizar o WAF;
 - Sempre que tiver que utilizar um S3 no projeto, ele deve ter a seguinte características: configuração de ciclo de vida (definir movimentação de tiers), ativar o versionamento e o encryption.
