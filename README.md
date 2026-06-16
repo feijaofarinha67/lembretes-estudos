@@ -40,7 +40,7 @@ Todos os itens a seguir devem ser realizados em todos os projetos ao menos que e
 - no RDS, sempre ativar a proteção de delação, parameter group proprio, snapshots e config logs
 - GuardDuty e WAF relacionados a: "Ensure compliance with relevant regulations and maintain records of suspicious activities."
 - Cloud-based = provavel serviço gerenciado (cloud-base batch processing system = AWS Batch)
-- Se usar ECS fazer a config com Fargate, ativar Container Insights, task definition logging enabled
+- Se usar ECS fazer a config com Fargate, ativar Container Insights, task definition logging enabled "Consider computing services taht minimize infrastructure management"
 - API Gateway: ativar logs e x-ray
 - Analisar as roles pre existentes na doc, e avaliar serviços potencialmente relacionaveis
 - caso haja "Point deductions" explicitamente na doc, tomar cuidado com os serviços
