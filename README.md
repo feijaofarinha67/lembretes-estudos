@@ -48,3 +48,5 @@ Todos os itens a seguir devem ser realizados em todos os projetos ao menos que e
 - Security Groups: remover regras 0.0.0.0/0 e SSH.
 - Kinesis: data streams com criptografia
 - CloudWatch: menções a monitoramento, alerta, observabilidade. Criar Alertas, Dashboards
+- GuardDuty: Malware protection
+- Macie - PII (sensitive data) in S3, storage 
