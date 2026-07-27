@@ -47,6 +47,6 @@ Todos os itens a seguir devem ser realizados em todos os projetos ao menos que e
 - DynamoDB: deletion protection, ttl, encryption, endpoint (vpc endpoint), tag e backup
 - Security Groups: remover regras 0.0.0.0/0 e SSH.
 - Kinesis: data streams com criptografia
-- CloudWatch: menções a monitoramento, alerta, observabilidade. Criar Alertas, Dashboards
+- CloudWatch: menções a monitoramento, alerta, observabilidade. Criar Alertas, Dashboards, retention policy
 - GuardDuty: Malware protection
 - Macie - PII (sensitive data) in S3, storage 
