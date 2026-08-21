@@ -1,0 +1,44 @@
+version: 0.2
+ 
+ # CodeBuild buildspec for unicorn-app
+ # Pipeline: Source (CodeCommit) → Build (CodeBuild) → Deploy (ECS)
+ 
+env:
+  variables:
+    # ECR_REPO_URI is injected by the CodeBuild project environment variables
+    IMAGE_TAG: latest
+
+phases:
+  install:
+    runtime-versions:
+      golang: 1.22
+    commands:
+      - echo "Installing dependencies..."
+
+  pre_build:
+    commands:
+      - echo "Logging in to Amazon ECR..."
+      - aws ecr get-login-password --region $AWS_DEFAULT_REGION |
+          docker login --username AWS --password-stdin $ECR_REPO_URI
+      - IMAGE_TAG=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c1-8)
+      - echo "Image tag is $IMAGE_TAG"
+
+  build:
+    commands:
+      - echo "Building Go binary..."
+      - cd app && go mod download && go build -o unicorn-app . && cd ..
+      - echo "Building Docker image..."
+      - docker build -t $ECR_REPO_URI:$IMAGE_TAG -t $ECR_REPO_URI:latest ./app
+
+  post_build:
+    commands:
+      - echo "Pushing Docker image to ECR..."
+      - docker push $ECR_REPO_URI:$IMAGE_TAG
+      - docker push $ECR_REPO_URI:latest
+      - echo "Writing imagedefinitions.json for ECS deploy action..."
+      - printf '[{"name":"unicorn-app","imageUri":"%s"}]' $ECR_REPO_URI:$IMAGE_TAG > imagedefinitions.json
+      - cat imagedefinitions.json
+
+artifacts:
+  files:
+      - imagedefinitions.json

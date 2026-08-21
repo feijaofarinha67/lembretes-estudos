@@ -1,0 +1,10 @@
+apiVersion: gateway.k8s.aws/v1beta1
+kind: TargetGroupConfiguration
+metadata:
+  name: app1-tg-config
+  namespace: default
+spec:
+  targetReference:
+    name: app1
+  defaultConfiguration:
+    targetType: ip
