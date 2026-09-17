@@ -35,10 +35,70 @@ Todos os itens a seguir devem ser realizados em todos os projetos ao menos que e
   
 - Security Groups: remover regras 0.0.0.0/0 e SSH.
   
+  
 - Kinesis: data streams com criptografia
   
 - CloudWatch: menções a monitoramento, alerta, observabilidade. Criar Alertas, Dashboards, retention policy
   
 - GuardDuty: Malware protection
   
-- Macie - PII (sensitive data) in S3, storage 
+- Macie - PII (sensitive data) in S3, storage
+
+## Lembretes Rápidos:
+
+### VPC
+
+- Tag
+- Flow Logs
+  
+### S3
+
+- Tag
+- Lifecycle
+- Versionamento
+- Criptografia
+- VPC Endpoint
+
+### DynamoDB
+
+- Tag
+- Deletion Protection
+- Criptografia
+- TTL
+- Backup
+- VPC Endpoint
+- Analisar GSI
+
+### RDS
+
+- Tag
+- Deletion Protection
+- Parameter Group personalizado
+- Snapshots/Backups
+- Logs
+
+### API Gateway
+
+- Tag
+- Logs
+- X-Ray
+
+### ECR
+
+- Tag
+- Imutabilidade
+- Criptografia
+- Lifecycle (expire)
+- Scan on push
+- Resource based policies
+- VPC Endpoints
+
+### EC2
+
+#### Security Groups
+
+- Remover regras 0.0.0.0/0
+
+#### Load Balancers
+
+- Logs export
